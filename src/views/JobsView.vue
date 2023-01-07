@@ -26,7 +26,7 @@
 
           <v-card-title class="text-h5 purpleTheme white-space">
             {{
-              post.companyNameTitle.length >= 21
+              companyNameTitlelength >= 21
                 ? post.companyNameTitle.substring(0, 21) + "..."
                 : post.companyNameTitle
             }}</v-card-title
@@ -38,7 +38,7 @@
               class="mx-0">
               <div class="grey--text text-h6 white-space">
                 {{
-                  post.jobProfile.length >= 29
+                  jobProfilelength >= 29
                     ? post.jobProfile.substring(0, 29) + "..."
                     : post.jobProfile
                 }}
@@ -49,7 +49,7 @@
               class="mx-0">
               <div class="grey--text white-space">
                 {{
-                  post.jobDescription.length >= 43
+                  jobDescriptionlength >= 43
                     ? post.jobDescription.substring(0, 43) + "..."
                     : post.jobDescription
                 }}
@@ -60,7 +60,7 @@
             <div>
               Location :
               {{
-                post.location.length >= 18
+                locationlength >= 18
                   ? post.location.substring(0, 18) + "..."
                   : post.location
               }}
@@ -68,7 +68,7 @@
             <div>
               Skills :
               {{
-                post.skills.length >= 27
+                skillslength >= 27
                   ? post.skills.substring(0, 27) + "..."
                   : post.skills
               }}
@@ -76,7 +76,7 @@
             <div>
               Salary :
               {{
-                post.salary.length >= 25
+                salarylength >= 25
                   ? post.salary.substring(0, 25) + "..."
                   : post.salary
               }}
@@ -125,6 +125,44 @@
       return {
         posts: [],
       };
+    },
+    computed: {
+      companyNameTitlelength() {
+        if (!this.companyNameTitle) {
+          return 0;
+        }
+        return this.companyNameTitle.length;
+      },
+      jobProfilelength() {
+        if (!this.jobProfile) {
+          return 0;
+        }
+        return this.jobProfile.length;
+      },
+      jobDescriptionlength() {
+        if (!this.jobDescription) {
+          return 0;
+        }
+        return this.jobDescription.length;
+      },
+      locationlength() {
+        if (!this.location) {
+          return 0;
+        }
+        return this.location.length;
+      },
+      skillslength() {
+        if (!this.skills) {
+          return 0;
+        }
+        return this.skills.length;
+      },
+      salarylength() {
+        if (!this.salary) {
+          return 0;
+        }
+        return this.salary.length;
+      },
     },
     async created() {
       this.posts = await API.getAllPost();
