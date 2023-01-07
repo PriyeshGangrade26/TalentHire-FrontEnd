@@ -1,0 +1,146 @@
+.center_header_container {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--color-black);
+  width: 100%;
+  transition: all 0.9s ease;
+}
+.menu-btn {
+  display: none;
+}
+.Header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 97%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-white);
+  padding: 0 8%;
+  border-radius: 0 0 20px 20px;
+  transition: all 0.9s ease;
+}
+.logo-title {
+  color: var(--color-black);
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.navbar {
+  transition: all 0.9s ease;
+}
+.navbar li a {
+  color: var(--color-gray);
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 20px;
+  transition: all 0.9s ease;
+}
+.navbar li a:hover {
+  color: var(--color-purple);
+  transition: all 0.2s ease;
+}
+li a.active {
+  color: var(--color-purple);
+  transform: scale(1.1);
+}
+.log {
+  cursor: pointer;
+  border: 1px solid var(--color-purple);
+  border-radius: 5px;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+  transition: 0.3s;
+  padding: 3px 4px;
+  font-size: 1rem;
+}
+.log:hover {
+  color: var(--color-purple);
+  background-color: var(--color-white);
+}
+#menu-icon {
+  font-size: 30px;
+  color: var(--color-black);
+  cursor: pointer;
+  z-index: 1000001;
+  display: none;
+}
+@media (max-width: 1280px) {
+  .Header {
+    padding: 4px 1%;
+    transition: 0.5s;
+  }
+  .logo-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .navbar a {
+    color: var(--color-gray);
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 20px;
+    transition: all 0.9s ease;
+  }
+}
+@media (max-width: 950px) {
+  #menu-icon {
+    display: block;
+  }
+  .nonBTN {
+    display: none;
+  }
+  .Header {
+    padding: 3px 5%;
+    transition: 0.5s;
+  }
+  .logo-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .navbar {
+    position: absolute;
+    top: 101%;
+    right: 0%;
+    width: 300px;
+    height: 35vh;
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    z-index: 1 !important;
+  }
+  .navbar a {
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    transition: all 0.9s ease;
+  }
+  .navbar a:hover {
+    color: var(--color-purple);
+    transform: scale(1.1);
+  }
+  .log {
+    border-radius: 5px;
+    font-size: 0.8rem;
+    padding: 3px 4px;
+  }
+  .menu-btn {
+    display: inline;
+  }
+  .header-visible {
+    display: none;
+  }
+}
+@media (max-width: 300px) {
+  .box-Icon {
+    display: none;
+  }
+}

@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: var(--color-black);
+  overflow-x: hidden;
+}
+:root {
+  --color-white: white;
+  --color-black: black;
+  --color-purple: rgb(126, 34, 206);
+  --color-gray: gray;
+  --color-graySmoke: rgb(229, 229, 229);
+}
+.Center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.white-space {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Vertical-Align {
+  align-items: center;
+}
+.purpleTheme {
+  color: rgb(126, 34, 206);
+}
+
+.MarginTop-100 {
+  margin-top: 100px;
+}
+.MarginTop-80 {
+  margin-top: 80px;
+}
+.MarginTop-60 {
+  margin-top: 60px;
+}
+.MarginTop-40 {
+  margin-top: 40px;
+}
+
+.MarginBottom-40 {
+  margin-bottom: 40px;
+}
+.MarginBottom-100 {
+  margin-bottom: 100px;
+}
+.MarginBottom-120 {
+  margin-bottom: 120px;
+}
+
+.MarginRight-20 {
+  margin-right: 20px;
+}
+.MarginRight-40 {
+  margin-right: 40px;
+}
+.MarginRight-60 {
+  margin-right: 60px;
+}
+.MarginRight-80 {
+  margin-right: 80px;
+}
+
+.MarginLeft-20 {
+  margin-left: 20px;
+}
+.MarginLeft-40 {
+  margin-left: 40px;
+}
