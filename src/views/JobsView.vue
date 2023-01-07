@@ -128,40 +128,40 @@
     },
     computed: {
       companyNameTitlelength() {
-        if (!this.companyNameTitle) {
+        if (!this.post) {
           return 0;
         }
-        return this.companyNameTitle.length;
+        return this.post.companyNameTitle.length;
       },
       jobProfilelength() {
-        if (!this.jobProfile) {
+        if (!this.post) {
           return 0;
         }
-        return this.jobProfile.length;
+        return this.post.jobProfile.length;
       },
       jobDescriptionlength() {
-        if (!this.jobDescription) {
+        if (!this.post) {
           return 0;
         }
-        return this.jobDescription.length;
+        return this.post.jobDescription.length;
       },
       locationlength() {
-        if (!this.location) {
+        if (!this.post) {
           return 0;
         }
-        return this.location.length;
+        return this.post.location.length;
       },
       skillslength() {
-        if (!this.skills) {
+        if (!this.post) {
           return 0;
         }
-        return this.skills.length;
+        return this.post.skills.length;
       },
       salarylength() {
-        if (!this.salary) {
+        if (!this.post) {
           return 0;
         }
-        return this.salary.length;
+        return this.post.salary.length;
       },
     },
     async created() {
