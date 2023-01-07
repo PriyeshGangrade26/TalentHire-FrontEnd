@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "/api/post";
+const url = "https://talent-hire.onrender.com/api/post";
 
 export default class API {
   //to get all the post from the server
